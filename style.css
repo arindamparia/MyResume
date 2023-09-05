@@ -33,7 +33,9 @@ body {
 
 .horizontal-list li a {
     color: white;
+    font-weight: 400;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .nav-menu li a {
@@ -47,6 +49,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+#bar{
+    visibility: hidden;
+    color: white;
 }
 
 /* Name and Social Icons*/
@@ -300,9 +306,6 @@ section:nth-child(2n + 1) {
     font-size: 1.2rem;
     color: whitesmoke;
 }
-#address-container{
-    margin-right: 10px;
-}
 #address-container p{
     font-size: 12px;
     color: white;
@@ -313,6 +316,9 @@ section:nth-child(2n + 1) {
 #address-container a{
     text-decoration: none;
     color: white;
+}
+#address-container h5{
+    margin:3vw 0;
 }
 #send-btn-container{
     text-align: center;
@@ -352,14 +358,14 @@ section:nth-child(2n + 1) {
 .progress-bar{
     position: absolute;
     border: 2px dashed #0096fa6b;
-    height: 80%;
+    height: 72%;
     width: 0;
-    top:8%;
+    top:6%;
     left: 50%;
 }
 .progress-bar-indicator{
     position: sticky;
-    top:25%;
+    top:20%;
     transform: rotate(90deg);
     z-index: 2;
     color: rgba(28, 60, 101, 0.94);
@@ -388,7 +394,7 @@ section:nth-child(2n + 1) {
 
 }
 .company-logo{
-    width: 20%;
+    width: auto;
 }
 .company-logo img{
     width: 60px;
@@ -417,7 +423,7 @@ section:nth-child(2n + 1) {
     color: grey;
     font-size: 1rem;
 }
-.work-about span{
+.work-about p{
     text-align: justify;
     font-size: 1rem;
     color: grey;
@@ -429,26 +435,81 @@ section:nth-child(2n + 1) {
         left: -14%;
     }
 }
-@media only screen and (max-width: 700px) {
-    .company-logo img{
-        width: 6vw;
-        height: 6vw;
+@media only screen and (max-width: 768px) {
+    .experience-box{
+        left: 20% !important;
+        margin-bottom: 10vw;
     }
-    .experience-box:nth-child(2n)::after{
-        left: -16%;
+    .experience-container{
+        width: 95%;
+    }
+    .experience-box{
+        width: 75%;
+
+    }
+    .experience-box::after{
+        left: -14% !important;
+    }
+    .progress-bar{
+        left: 10.6%;
+    }
+    .company-logo img{
+        width: 15vw;
+        height: 15vw;
+    }
+    #contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #address-container{
+        margin-top: 20vw;
+    }
+    #form-container input,textarea, #address-container{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 572px){
+    #menu-container{
+        display:none;
+        border: 1px solid #9a9d8c;
+        width: auto;
+        text-align: left;
+        position: absolute;
+        top: 12vw;
+        right: 4vw;
+        background-color: #9a9d8c;
+        padding: 2vw 1vw 1vw 3vw;
+        box-shadow: 0 0 6px 4px #5b675b;
+    }
+    #menu-container li{
+        display: block;
+        letter-spacing: 0.1rem;
+    }
+    #bar{
+        position: absolute;
+        text-align: right;
+        width: auto;
+        top: 3vw;
+        right: 8vw;
+        visibility: visible;
+        padding: 0 0 12vw 0;
+    }
+
+    #navbar:hover  #menu-container{
+        display: block;
     }
 }
 @media only screen and (max-width: 500px) {
     .social-icons{
         margin-top: 1vh;
     }
-    .experience-container{
-        width: 100%;
-    }
-    .experience-box:nth-child(2n){
-        left:55vw;
+    .progress-bar{
+        left: 11.2%;
     }
     .section-heading{
         padding: 0;
+    }
+    .section-heading span{
+        font-size:30px;
     }
 }
