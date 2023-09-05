@@ -70,12 +70,13 @@ body {
 }
 .social-icons{
     letter-spacing: 10px;
-    margin-top: 5vh;
+    margin-top: 5vw;
+    padding-left: 2.4vw;
 }
 .social-icons li a i {
     /*color: red;*/
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 50%;
 }
 
@@ -336,6 +337,7 @@ section:nth-child(2n + 1) {
     font-weight: 900;
     letter-spacing: 1px;
 }
+
 #contact-box-social-icons{
     margin-bottom: 6vh;
 }
@@ -360,7 +362,7 @@ section:nth-child(2n + 1) {
     border: 2px dashed #0096fa6b;
     height: 72%;
     width: 0;
-    top:6%;
+    top:9%;
     left: 50%;
 }
 .progress-bar-indicator{
@@ -462,7 +464,7 @@ section:nth-child(2n + 1) {
         align-items: center;
     }
     #address-container{
-        margin-top: 20vw;
+        margin-top: 15vw;
     }
     #form-container input,textarea, #address-container{
         width: 70vw;
@@ -498,18 +500,26 @@ section:nth-child(2n + 1) {
     #navbar:hover  #menu-container{
         display: block;
     }
-}
-@media only screen and (max-width: 500px) {
     .social-icons{
-        margin-top: 1vh;
+        margin-top: 14vw;
     }
     .progress-bar{
-        left: 11.2%;
+        left: 10.8%;
     }
     .section-heading{
         padding: 0;
     }
     .section-heading span{
         font-size:30px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .progress-bar{
+        left: 11%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .progress-bar{
+        left: 11.6%;
     }
 }
