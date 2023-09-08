@@ -366,13 +366,17 @@ section:nth-child(2n + 1) {
     left: 50%;
 }
 .progress-bar-indicator{
-
     position: sticky;
     top: 25%;
     transform: rotate(90deg);
     z-index: 2;
     color: rgba(28, 60, 101, 0.94);
     margin-top: -13px;
+}
+
+#certificates .progress-bar-indicator {
+    margin-top: 10px;
+
 }
 .experience-box::after{
     content: '';
