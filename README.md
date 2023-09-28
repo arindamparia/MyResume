@@ -1,2 +1,2 @@
 # MyResume
-# arindamparia.me
+arindamparia.me
